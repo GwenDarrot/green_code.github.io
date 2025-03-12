@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Josefin+Sans:wght@400;500&family=Satisfy&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(90deg, #262626, #2a2a2a, #545454, #2a2a2a, #262626);
+    height: 100%;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contenedor {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    border-bottom: 1px solid #676767;
+    box-shadow: 0 -8px 15px rgba(0, 0, 0, 0.85);
+    background: #111;
+    height: 6%;
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+}
+
+.Logo {
+    font-family: "Caveat", serif;
+    font-optical-sizing: auto;
+    font-size: 30px;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    text-shadow: 
+        0 0 5px rgb(99, 210, 73), 
+        0 0 10px rgb(99, 210, 73), 
+        0 0 20px rgb(99, 210, 73), 
+        0 0 30px rgb(99, 210, 73), 
+        0 0 40px rgb(99, 210, 73), 
+        0 0 50px rgb(99, 210, 73), 
+        0 0 60px rgb(99, 210, 73);
+    margin-left: 20px;
+}
+.Logo a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.Logo a:hover {
+    color: rgb(225, 252, 161);
+}
+
+.menu {
+    border-bottom: 1px solid #676767;
+    box-shadow: 0 -8px 15px rgba(0, 0, 0, 0.85);
+    background: #111;
+    color: white;
+    padding: 10px;
+    font-family: "Caveat", serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
+    position: relative;
+}
+
+.inicio a:hover {
+    color: white;
+    text-shadow: 
+        0 0 5px #61dafb, 
+        0 0 10px #61dafb, 
+        0 0 20px #61dafb, 
+        0 0 30px #61dafb, 
+        0 0 40px #61dafb, 
+        0 0 50px #61dafb, 
+        0 0 60px #61dafb;
+}
+
+.necesidad a:hover {
+    color: white;
+    text-shadow: 
+        0 0 5px rgb(251, 105, 98), 
+        0 0 10px rgb(251, 105, 98), 
+        0 0 20px rgb(251, 105, 98), 
+        0 0 30px rgb(251, 105, 98), 
+        0 0 40px rgb(251, 105, 98), 
+        0 0 50px rgb(251, 105, 98), 
+        0 0 60px rgb(251, 105, 98);
+}
+
+.aproximacion-a-la-solucion a:hover {
+    color: white;
+    text-shadow: 
+        0 0 5px rgb(254, 248, 76), 
+        0 0 10px rgb(254, 248, 76), 
+        0 0 20px rgb(254, 248, 76), 
+        0 0 30px rgb(254, 248, 76), 
+        0 0 40px rgb(254, 248, 76), 
+        0 0 50px rgb(254, 248, 76), 
+        0 0 60px rgb(254, 248, 76);
+}
+
+.beneficios a:hover {
+    color: white;
+    text-shadow: 
+        0 0 5px rgb(151, 120, 209), 
+        0 0 10px rgb(151, 120, 209), 
+        0 0 20px rgb(151, 120, 209), 
+        0 0 30px rgb(151, 120, 209), 
+        0 0 40px rgb(151, 120, 209), 
+        0 0 50px rgb(151, 120, 209), 
+        0 0 60px rgb(151, 120, 209);
+}
+
+.colaboracion a:hover {
+    color: white;
+    text-shadow: 
+        0 0 5px rgb(207, 42, 186), 
+        0 0 10px rgb(207, 42, 186), 
+        0 0 20px rgb(207, 42, 186), 
+        0 0 30px rgb(207, 42, 186), 
+        0 0 40px rgb(207, 42, 186), 
+        0 0 50px rgb(207, 42, 186), 
+        0 0 60px rgb(207, 42, 186);
+}
+
+.gancho a:hover {
+    color: white;
+    text-shadow: 
+        0 0 5px rgb(99, 210, 73), 
+        0 0 10px rgb(99, 210, 73), 
+        0 0 20px rgb(99, 210, 73), 
+        0 0 30px rgb(99, 210, 73), 
+        0 0 40px rgb(99, 210, 73), 
+        0 0 50px rgb(99, 210, 73), 
+        0 0 60px rgb(99, 210, 73);
+}
+
+.menu :visited {
+    color: #61dafb;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    gap: 5px;
+}
+
+.img-necesidad-info-container,
+.img-aproximacion-info-container,
+.img-beneficios-info-container,
+.img-colaboracion-info-container,
+.img-gancho-info-container {
+    background-color: black;
+    padding: 30px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    width: 100%;
+    max-width: 576px;
+    position: relative;
+    border-radius: 8px;
+    background: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+    padding: 8px;
+}
+
+.info-container,
+.necesidad-info-container,
+.aproximacion-info-container,
+.beneficios-info-container,
+.colaboracion-info-container,
+.gancho-info-container {
+    background: #404040;
+    border-bottom: 1px solid #676767;
+    border-top: 1px solid #000;
+    border-radius: 8px;
+    box-shadow: 0 -8px 15px rgba(0, 0, 0, .85);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    margin-block-end: calc(var(--gap)*1.5);
+    padding: 1rem;
+    width: 90%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.titulo-info-container {
+    font-family: "Caveat", serif;
+    font-size: 45px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: white;
+    text-shadow: 
+        0 0 5px #61dafb, 
+        0 0 10px #61dafb, 
+        0 0 20px #61dafb, 
+        0 0 30px #61dafb, 
+        0 0 40px #61dafb, 
+        0 0 50px #61dafb, 
+        0 0 60px #61dafb;
+}
+
+.video-texto-info-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.video-info-container {
+    background-color: black;
+    padding: 30px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    width: 100%;
+    max-width: 576px;
+    position: relative;
+    border-radius: 8px;
+    background: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+    padding: 8px;
+   
+}
+
+.texto-info-container,
+.texto-necesidad-info-container,
+.texto-aproximacion-info-container,
+.texto-beneficios-info-container,
+.texto-colaboracion-info-container,
+.introduccion-colaboracion-info-container,
+.texto-gancho-info-container {
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+p,
+.lista-seccion-necesidad-info-container,
+.lista-seccion-aproximacion-info-container,
+.lista-seccion-beneficios-info-container,
+.lista-seccion-colaboracion-info-container {
+    line-height: 1.5;
+    text-align: justify;
+    font-size: 20px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 25px;
+}
+
+.titulo-seccion-necesidad-info-container {
+    font-family: "Caveat", serif;
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: white;
+    text-shadow: 
+        0 0 5px rgb(251, 105, 98), 
+        0 0 10px rgb(251, 105, 98), 
+        0 0 20px rgb(251, 105, 98), 
+        0 0 30px rgb(251, 105, 98), 
+        0 0 40px rgb(251, 105, 98), 
+        0 0 50px rgb(251, 105, 98), 
+        0 0 60px rgb(251, 105, 98);
+}
+
+.titulo-necesidad-info-container {
+    font-family: "Caveat", serif;
+    font-size: 45px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    color: white;
+    text-shadow: 
+        0 0 5px rgb(251, 105, 98), 
+        0 0 10px rgb(251, 105, 98), 
+        0 0 20px rgb(251, 105, 98), 
+        0 0 30px rgb(251, 105, 98), 
+        0 0 40px rgb(251, 105, 98), 
+        0 0 50px rgb(251, 105, 98), 
+        0 0 60px rgb(251, 105, 98);
+}
+
+.titulo-aproximacion-info-container {
+    font-family: "Caveat", serif;
+    font-size: 45px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    color: white;
+    text-shadow: 
+        0 0 5px rgb(254, 248, 76), 
+        0 0 10px rgb(254, 248, 76), 
+        0 0 20px rgb(254, 248, 76), 
+        0 0 30px rgb(254, 248, 76), 
+        0 0 40px rgb(254, 248, 76), 
+        0 0 50px rgb(254, 248, 76), 
+        0 0 60px rgb(254, 248, 76);
+}
+
+.titulo-seccion-aproximacion-info-container,
+.titulo-lista-aproximacion-info-container {
+    font-family: "Caveat", serif;
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: white;
+    text-shadow: 
+        0 0 5px rgb(254, 248, 76), 
+        0 0 10px rgb(254, 248, 76), 
+        0 0 20px rgb(254, 248, 76), 
+        0 0 30px rgb(254, 248, 76), 
+        0 0 40px rgb(254, 248, 76), 
+        0 0 50px rgb(254, 248, 76), 
+        0 0 60px rgb(254, 248, 76);
+}
+
+.titulo-beneficios-info-container {
+    font-family: "Caveat", serif;
+    font-size: 45px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    color: white;
+    text-shadow: 
+        0 0 5px rgb(151, 120, 209), 
+        0 0 10px rgb(151, 120, 209), 
+        0 0 20px rgb(151, 120, 209), 
+        0 0 30px rgb(151, 120, 209), 
+        0 0 40px rgb(151, 120, 209), 
+        0 0 50px rgb(151, 120, 209), 
+        0 0 60px rgb(151, 120, 209);
+}
+
+.titulo-seccion-beneficios-info-container {
+    font-family: "Caveat", serif;
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: white;
+    text-shadow: 
+        0 0 5px rgb(151, 120, 209), 
+        0 0 10px rgb(151, 120, 209), 
+        0 0 20px rgb(151, 120, 209), 
+        0 0 30px rgb(151, 120, 209), 
+        0 0 40px rgb(151, 120, 209), 
+        0 0 50px rgb(151, 120, 209), 
+        0 0 60px rgb(151, 120, 209);
+}
+
+.titulo-colaboracion-info-container {
+    font-family: "Caveat", serif;
+    font-size: 45px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    color: white;
+    text-shadow: 
+        0 0 5px rgb(207, 42, 186), 
+        0 0 10px rgb(207, 42, 186), 
+        0 0 20px rgb(207, 42, 186), 
+        0 0 30px rgb(207, 42, 186), 
+        0 0 40px rgb(207, 42, 186), 
+        0 0 50px rgb(207, 42, 186), 
+        0 0 60px rgb(207, 42, 186);
+}
+
+.titulo-seccion-colaboracion-info-container {
+    font-family: "Caveat", serif;
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: white;
+    text-shadow: 
+        0 0 5px rgb(207, 42, 186), 
+        0 0 10px rgb(207, 42, 186), 
+        0 0 20px rgb(207, 42, 186), 
+        0 0 30px rgb(207, 42, 186), 
+        0 0 40px rgb(207, 42, 186), 
+        0 0 50px rgb(207, 42, 186), 
+        0 0 60px rgb(207, 42, 186);
+}
+
+.titulo-gancho-info-container {
+    font-family: "Caveat", serif;
+    font-size: 45px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    color: white;
+    text-shadow: 
+        0 0 5px rgb(99, 210, 73), 
+        0 0 10px rgb(99, 210, 73), 
+        0 0 20px rgb(99, 210, 73), 
+        0 0 30px rgb(99, 210, 73), 
+        0 0 40px rgb(99, 210, 73), 
+        0 0 50px rgb(99, 210, 73), 
+        0 0 60px rgb(99, 210, 73);
+}
+
+.titulo-seccion-gancho-info-container {
+    font-family: "Caveat", serif;
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: white;
+    text-shadow: 
+        0 0 5px rgb(99, 210, 73), 
+        0 0 10px rgb(99, 210, 73), 
+        0 0 20px rgb(99, 210, 73), 
+        0 0 30px rgb(99, 210, 73), 
+        0 0 40px rgb(99, 210, 73), 
+        0 0 50px rgb(99, 210, 73), 
+        0 0 60px rgb(99, 210, 73);
+}
+
+.green-code {
+    font-family: "Caveat", serif;
+    font-size: 25px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: white;
+    text-shadow: 
+        0 0 5px rgb(99, 210, 73), 
+        0 0 10px rgb(99, 210, 73), 
+        0 0 20px rgb(99, 210, 73), 
+        0 0 30px rgb(99, 210, 73), 
+        0 0 40px rgb(99, 210, 73), 
+        0 0 50px rgb(99, 210, 73), 
+        0 0 60px rgb(99, 210, 73);
+}
+
+
+.titulo-lista-necesidad-info-container {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+li {
+    margin-bottom: 15px;
+    margin-left: 25px;
+    list-style: none;
+}
+
+footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    text-align: right;
+    margin-top: 50px;
+
+}
+
+footer a {
+    color: #61dafb;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu ul li {
+        margin-bottom: 10px;
+    }
+
+    .info-container,
+    .necesidad-info-container,
+    .aproximacion-info-container,
+    .beneficios-info-container,
+    .colaboracion-info-container,
+    .gancho-info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    p,
+    .lista-seccion-necesidad-info-container,
+    .lista-seccion-aproximacion-info-container,
+    .lista-seccion-beneficios-info-container,
+    .lista-seccion-colaboracion-info-container {
+        width: 80%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Logo {
+        margin-left: 0;
+        text-align: center;
+    }
+}
